@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://stay-finder-backend-nine.vercel.app/api',
+  baseURL: 'https://stay-finder-backend-7z0s.onrender.com',
   timeout: 5000,
 });
 
