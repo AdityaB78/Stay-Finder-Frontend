@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://stay-finder-backend-7z0s.onrender.com',
+  baseURL: 'https://stay-finder-backend-nine.vercel.app/api',
   timeout: 5000,
 });
 
@@ -51,7 +51,7 @@ export const getAllListings = async (location = '') => {
 };
 
 export const getListing = async (id) => {
-  const response = await api.get(`/listings/${id}`);
+  const response = await api.get(`/listings/${id}`); 
   return response.data.data;
 };
 
